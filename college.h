@@ -1,5 +1,5 @@
 /** @file college.h
- *  @brief This file contains the declaration for the college class.
+ *  @brief This file contains the declaration for the college class
  *  @author Matthew Aberegg documented by Bailey Peery
  *
  */
