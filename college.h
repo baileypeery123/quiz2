@@ -1,3 +1,11 @@
+/** @file college.h
+ *  @brief This file contains the declaration for the college class.
+ *  @author Matthew Aberegg documented by Bailey Peery
+ *
+ */
+
+
+
 //********************
 //Matthew Aberegg
 //Project 3

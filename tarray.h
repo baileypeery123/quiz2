@@ -1,3 +1,10 @@
+/** @file tarray.h 
+ *  @brief This file contains the declaration of a templated array class 
+ *  @author John Dolan documented by Bailey Peery
+ */
+
+
+
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely

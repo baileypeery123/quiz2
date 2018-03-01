@@ -1,3 +1,12 @@
+/** @file course.cc
+ *  @brief This file contains the definitions for the course class
+ *  @authror John Dolan documented by Bailey Peery
+ *
+ */
+
+
+
+
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.

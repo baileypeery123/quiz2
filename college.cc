@@ -1,3 +1,11 @@
+/** @file college.cc
+ *  @brief This file contains the function definitions for college.h
+ *  @author Matthew Aberegg documented by Bailey Peery
+ *
+*/
+
+
+
 //********************
 //Matthew Aberegg
 //Project 3
@@ -11,18 +19,22 @@
 #include<string>
 using namespace std;
 
-College::College(std::string s){
-	name = s;
-	head = NULL;
+College::College(std::string s)
+///This function is the default constructor for the college class.
+{
+	name = s; ///sets name to s.
+	head = NULL; ///points head to null.
 }
 
 
-College::~College(){
-	node * rmptr;
-	while(head != NULL){
-		rmptr = head;
-		head = head->link();
-		delete rmptr;
+College::~College()
+///This function is the destructor. It deconstructs the linked list.
+{
+	node * rmptr; ///creates new pointer
+	while(head != NULL){ 
+		rmptr = head; ///points to head
+		head = head->link(); ///moves head up one node
+		delete rmptr; ///deletes rmptr
 	}
 }
 
@@ -108,7 +120,7 @@ void College::add(course& c){
 }
 
 void College::remove(std::string coursename){
-	node * previous;	
+	node * previous;
 	node * cursor;
 	if(coursename == head->data().get_course_number()){
 		cursor = head;
@@ -129,17 +141,20 @@ void College::remove(std::string coursename){
 }
 }
 
-void College::display(std::ostream& outs){
-	node * ptr;
-	ptr = head;
-	while(ptr != NULL){
-		outs << ptr->data().get_course_number();
+void College::display(std::ostream& outs)
+///This function displays the current values of the linked list
+{
+	node * ptr; ///creats a new pointer to walk through the list
+	ptr = head; ///sets pointer to head
+	while(ptr != NULL)///while ptr does not reach end of list
+	{
+		outs << ptr->data().get_course_number(); ///outputs #
 		outs << ", ";
-		outs << ptr->data().get_grade();
+		outs << ptr->data().get_grade(); ///outputs grade
 		outs << ", ";
-		outs << ptr->data().get_hours();
+		outs << ptr->data().get_hours();///outputs hours
 		outs << "\n";
-		ptr = ptr->link();
+		ptr = ptr->link(); ///moves to next node
 	}
 	outs << "\n";
 }

@@ -1,3 +1,12 @@
+/** @file node.h
+ *  @brief This file contains the declaration of the node class
+ *  @author John Dolan documented by Bailey Peery
+ */
+
+
+
+
+
 /*************************************************************************
       This file is borrowed heavily from Main/Savitch "Data Structures and
       Other Object Using C++," Chapter 5. It features a node class that 

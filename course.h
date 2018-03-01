@@ -1,3 +1,13 @@
+/** @file course.h
+ *  @brief this file contains the declaration of the course class
+ *  @author John Dolan documented by Bailey Peery
+ *
+ */
+
+
+
+
+
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
